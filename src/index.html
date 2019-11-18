@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DSLab Crowdfunding</title>
+
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <!--Template taken from https://codepen.io/LegendAF/pen/MaNaPr -->
+      <main class="site">
+          <article class="card card--open" data-card>
+
+              <header class="card__header" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/43525/preview-watchme.jpg');">
+                  <img class="card__preview" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43525/preview-ratio.png" alt="Preview Image">
+              </header>
+              <!-- /.card__header -->
+              <section class="card__body">
+                  <h2 class="card__title">DS Crowdfunding</h2>
+                  <h3 class="card__subtitle">An example of distributed app</h3>
+                  <a href="#" id="fund">Fund me <b>1 ETH</b>!</a>
+                  <p id="accountAddress"></p>
+              </section>
+              <!-- /.card__body -->
+
+              <footer class="card__footer">
+                  <div class="card__progress progress" data-percent="45" id="percent">
+                  </div>
+                  <div class="card__stats stats">
+                      <div class="stats__item stats__actual">
+                          <div class="stats__title">raised so far</div>
+                          <div class="stats__amount" id="sum">$19,520</div>
+                      </div>
+                      <!-- /.stats__item stats__actual -->
+
+                      <div class="stats__item stats__goal">
+                          <div class="stats__title">our goal</div>
+                          <div class="stats__amount" id="goal">$20,000</div>
+                      </div>
+                      <!-- /.stats__item stats__goal -->
+                  </div>
+                  <!-- /.card__stats  stats -->
+              </footer>
+              <!-- /.card__footer -->
+          </article>
+          <!-- /.card -->
+      </main>
+      <!-- /.site -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

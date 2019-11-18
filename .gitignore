@@ -1,0 +1,17 @@
+.classpath
+.project
+.pydevproject
+.settings/
+dependency-reduced-pom.xml
+target/
+.DS_STORE
+.idea
+*.pyc
+*.class
+*.log
+*.tmp
+*.iml
+*~
+*.swp
+.vscode
+build
